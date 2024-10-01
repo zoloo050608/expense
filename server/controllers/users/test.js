@@ -6,7 +6,8 @@ export const testController = async (req, res) => {
   const createdat = new Date();
   const updatedat = new Date();
 
-  await sql`INSERT INTO users(username, email, password, createdat, updatedat) VALUES(${username},${email},${password},${createdat}, ${updatedat})`;
+  const result =
+    await sql`INSERT INTO users(username, email, password, createdat, updatedat) VALUES(${username},${email},${password},${createdat}, ${updatedat})`;
 
   // const result = await sql`SELECT * FROM users`;
   // console.log(result);

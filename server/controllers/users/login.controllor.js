@@ -1,5 +1,4 @@
 import { readFileSync } from "fs";
-
 import bcrypt from "bcryptjs";
 
 export const Login = async (req, res) => {
